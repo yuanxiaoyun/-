@@ -22,23 +22,22 @@
 （3）调用方法计算税收  
 （4）对输入的学生信息进行打印，并输出纳税的金额
 （5）实例化的两个学生数据处理方法相同
-# 核心代码
-# 异常处理  
- Scanner a = new Scanner(System.in);
-        a:for(;;) {//异常处理输错 循环
-        System.out.println("请依次输入姓名、性别、学费、工资：");
-         b = a.next();//姓名
-         b1 = a.next();//性别
-            try {//判断异常
-                Scanner a1 = new Scanner(System.in);
-                b5 = a1.nextDouble();//学费
-                b6 = a1.nextDouble();//薪水
-                break a;//跳出异常处理
-            } catch (Exception e) {//输出异常处理
-                System.out.println("请输入正确格式！请重新输入");
-
-            }
-        }
+# 核心代码  
+异常处理  
+ Scanner a = new Scanner(System.in);  
+        a:for(;;) {//异常处理输错 循环  
+        System.out.println("请依次输入姓名、性别、学费、工资：");  
+         b = a.next();//姓名    
+            try {//判断异常  
+                Scanner a1 = new Scanner(System.in);   
+                b5 = a1.nextDouble();//学费  
+                b6 = a1.nextDouble();//薪水  
+                break a;//跳出异常处理   
+            } catch (Exception e) {//输出异常处理  
+                System.out.println("请输入正确格式！请重新输入");   
+  
+            }   
+        }  
 # 运行截图
 ![8bc6ecd3bdd659af4c2912e01651737.png](https://i.loli.net/2020/11/09/wKdTpLcmEa4k9VW.png)
 ![dfc5340fb53a09c4b251d41d963520f.png](https://i.loli.net/2020/11/09/DVshwAbclE5qFeG.png)
